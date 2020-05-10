@@ -363,7 +363,8 @@ public class Utils {
         }
 
         final Locale l = Locale.getDefault();
-        final String datePattern = DateFormat.getBestDateTimePattern(l, dateSkeleton);
+        /* final String datePattern = DateFormat.getBestDateTimePattern(l, dateSkeleton); */
+        final String datePattern = "E, dd.MM(w)";
         final String descriptionPattern = DateFormat.getBestDateTimePattern(l, descriptionSkeleton);
 
         final Date now = new Date();
